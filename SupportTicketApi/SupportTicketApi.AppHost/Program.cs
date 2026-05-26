@@ -1,11 +1,14 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var sql = builder.AddSqlServer("sql", port: 14329)
-                 .WithEndpoint(name: "sqlEndpoint", targetPort: 14330)
-                 .AddDatabase("sqldata");
+var postgresdb = builder.AddConnectionString("mydatabase");
+
+var migrations = builder.AddProject<Projects.SupportTicketApi_MigrationService>("migrations")
+    .WithReference(postgresdb)
+    .WaitFor(postgresdb);
 
 builder.AddProject<Projects.SupportTicketApi_Api>("api")
-    .WithReference(sql)
-    .WaitFor(sql);
+    .WithReference(postgresdb)
+    .WithReference(migrations)
+    .WaitForCompletion(migrations);
 
 builder.Build().Run();
