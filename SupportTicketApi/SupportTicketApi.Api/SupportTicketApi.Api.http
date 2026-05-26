@@ -1,0 +1,6 @@
+﻿@SupportTicketApi.Api_HostAddress = https://localhost:7007
+
+GET {{SupportTicketApi.Api_HostAddress}}/api/activities
+Authorization: Bearer {{$bearerToken}}
+
+###

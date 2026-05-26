@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.8.0.0
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11205.157
 MinimumVisualStudioVersion = 17.8.0.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.AppHost", "SupportTicketApi.AppHost\SupportTicketApi.AppHost.csproj", "{EA360406-EA8B-4D5B-8BF3-21104665732F}"
 EndProject
@@ -9,6 +9,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.Api", "SupportTicketApi.Api\SupportTicketApi.Api.csproj", "{CD887ABA-C3A9-40D7-9B4B-E5596708D2A0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.Data", "SupportTicketApi.Data\SupportTicketApi.Data.csproj", "{B13AA39F-37AB-41C7-9C67-8828EE4D5C55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportTicketApi.Core", "SupportTicketApi.Contracts\SupportTicketApi.Core.csproj", "{A3ED5E17-8402-4485-B8EC-C976ABBF07CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportTicketApi.MigrationService", "SupportTicketApi.MigrationService\SupportTicketApi.MigrationService.csproj", "{9EEC99E9-F914-0095-3879-1F8C9EC70F52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,14 @@ Global
 		{B13AA39F-37AB-41C7-9C67-8828EE4D5C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B13AA39F-37AB-41C7-9C67-8828EE4D5C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B13AA39F-37AB-41C7-9C67-8828EE4D5C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3ED5E17-8402-4485-B8EC-C976ABBF07CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3ED5E17-8402-4485-B8EC-C976ABBF07CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3ED5E17-8402-4485-B8EC-C976ABBF07CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3ED5E17-8402-4485-B8EC-C976ABBF07CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEC99E9-F914-0095-3879-1F8C9EC70F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEC99E9-F914-0095-3879-1F8C9EC70F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEC99E9-F914-0095-3879-1F8C9EC70F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEC99E9-F914-0095-3879-1F8C9EC70F52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
